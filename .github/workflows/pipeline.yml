@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - name: Dislay SoftUni username
-        run: echo "mitkogatev\n"
+        run: echo "mitkogatev"
       - name: Repo checkout
         uses: actions/checkout@v3
       - name: Use Node.js 18.x
@@ -36,4 +36,3 @@ jobs:
         with:
           service-id: ${{ secrets.MY_RENDER_SERVICE_ID }}
           api-key: ${{ secrets.MY_RENDER_API_KEY }}
-          wait-for-success: true
